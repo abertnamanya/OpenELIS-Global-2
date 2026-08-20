@@ -58,12 +58,12 @@
     <Connector port="8443" minSpareThreads="5" maxThreads="75" enableLookups="true" disableUploadTimeout="true" acceptCount="100" scheme="https" secure="true" clientAuth="true" sslProtocol="TLS" SSLEnabled="true" keystoreFile="${hapi.ssl.keystorepath}" keystoreType="PKCS12" keystorePass="${hapi.ssl.keystorepassword}" truststoreFile="${hapi.ssl.truststorepath}" truststoreType="PKCS12" truststorePass="${hapi.ssl.truststorepassword}" URIEncoding="UTF-8"/>
 
     <!-- A "Connector" using the shared thread pool-->
-    <!--
+
     <Connector executor="tomcatThreadPool"
                port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
-    -->
+
     <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
          SSLImplementation will depend on the presence of the APR/native
